@@ -55,8 +55,7 @@ export default {
   background-color: red;
   color: white;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  padding: 5px 10px 6px;
   cursor: pointer;
   border: none;
   position: absolute;

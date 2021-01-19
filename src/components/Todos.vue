@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="todosWrapper">
     <div
       v-for="todo in todos"
       v-bind:key="todo.id"
@@ -24,19 +24,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.wrapper {
+.todosWrapper {
   display: flex;
   flex-direction: column;
   background-color: rgb(236, 236, 236);
-  width: 500px;
-  border: 1px solid black;
+  width: 100%;
 }
 
 .todo {
-  padding: 10px;
+  padding: 15px 10px;
 }
 
 .todo:not(:last-child) {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(185, 185, 185);
 }
 </style>
