@@ -4,9 +4,7 @@
       type="checkbox"
       @change="markCompleted"
       class="checkbox"
-      :value="todo.completed"
       :checked="todo.completed"
-      
     />
     <p class="todo" :class="{ completed: todo.completed }">
       {{ todo.title }}

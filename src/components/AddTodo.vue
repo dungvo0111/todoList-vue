@@ -1,7 +1,18 @@
 <template>
   <div class="addTodoWrapper">
-    <input type="text" v-model="newTodo" placeholder="Add todo..." @keyup.enter="handleEnter"/>
-    <button type="submit" @click="handleSubmit">Submit</button>
+    <input
+      type="text"
+      v-model="newTodo"
+      placeholder="Add todo..."
+      @keyup.enter="handleEnter"
+    />
+    <button
+      type="submit"
+      @click="handleSubmit"
+      :disabled="newTodo.length === 0"
+    >
+      Submit
+    </button>
   </div>
 </template>
 
@@ -25,8 +36,8 @@ export default {
     },
 
     handleEnter() {
-        this.handleSubmit()
-    }
+      this.handleSubmit();
+    },
   },
 };
 </script>
